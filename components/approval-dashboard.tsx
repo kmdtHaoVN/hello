@@ -247,9 +247,9 @@ export function ApprovalDashboard() {
       events.map((event) =>
         event.id === eventId
           ? {
-              ...event,
-              status: "approved",
-            }
+            ...event,
+            status: "approved",
+          }
           : event,
       ),
     )
@@ -262,9 +262,9 @@ export function ApprovalDashboard() {
       events.map((event) =>
         event.id === eventId
           ? {
-              ...event,
-              status: "rejected",
-            }
+            ...event,
+            status: "rejected",
+          }
           : event,
       ),
     )
@@ -452,7 +452,7 @@ export function ApprovalDashboard() {
 
         {/* Event Details Dialog */}
         <Dialog open={showEventDetails} onOpenChange={setShowEventDetails}>
-          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          <DialogContent className="max-w-7xl max-h-[90vh] overflow-y-auto">
             <DialogHeader>
               <DialogTitle>Chi Tiết Yêu Cầu Phê Duyệt</DialogTitle>
               <DialogDescription>Xem xét thông tin chi tiết và đưa ra quyết định</DialogDescription>
